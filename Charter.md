@@ -15,18 +15,31 @@
 	* Identify opportunities to create customer loyalty/affinity programs
 	* Create location-based driver (concierge) services
 	* Enable targeted marketing campaigns by purchase probability
+	* Increase effectiveness and decrease cost of sales and marketing efforts
 	* Support advanced credit risk analysis
 	* Ensure regulatory compliance through appropriate customer and dealer incentives
 	* Identify additional sales opportunities in the Aftermarket
 	* Provide better and more consistent customer service
 	* Develop a better understanding of the total lifetime value of each customer 
+	* Improve and optimize customer-related business processes
 	* Possible monetization of data relating to PACCAR's customer relationships
 * **What is this problem worth to the stakeholders?**
 	* TBD
 
 ## Scope
-* **Why is Data Science the right approach?**
-	* Approval is a complex process with a wide variety of inputs (part cost, labor cost, part numbers, text, etc.) and input levels (i.e. number of possible part numbers). Analytical approaches can automate auto-pay rule generation to reduce manual bias, as well as provide validation tools to evaluate performance.
+* **Questions/issues to be addressed by this POC:**
+	* What business entities/parties/roles should be included in Customer MDM? How are they defined?
+	* What data do we need to extract and/or purchase (and from which sources) in order to achieve a complete view of a customer?
+	* What cleansing or transformation of the data from each source is needed?
+	* How can/should the data from the different sources be integrated together?
+	* What is the best taxonomy (organization) for Customer data? What level of abstraction (e.g., "Party") is appropriate?
+	* What customer data needs to be managed centrally? Which data should be managed in the source systems?
+	* What history of changes to data values do we want to keep?
+	* What level of security needs to be established for which customer data attributes?
+	* What metadata (data about the data) needs to be created and maintained to make the customer data useful?
+	* What type and degree of stewardship by the business is needed to maintain the quality of customer data?
+	* What technologies and tools are needed to most effectively create and manage Customer master data?
+	* How can this master data be effectively leveraged in support of the above-mentioned business objectives?
 * **What Data Science solutions are we trying to build?**
 	* Two approaches are considered at the outset, approaching the approval decision from two perspectives.
 		* Approach 1: Assume no claims are approved until a sufficient amount of supporting evidence is produced. This is an **emulation of the current process**, and will consist of training a machine learner on historical claim adjudication data to build a virtual claim reviewer.
