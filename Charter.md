@@ -48,40 +48,18 @@
 	* Cleansing, transformation, integration and loading of data into MDM repository
 	* Creation of associated end-user metadata
 	* Evaluation of MDM tools and technologies
+	* Evaluation of MDM governance strategies
 
 ## Personnel
 * Project Team:
-	* Data Science Team:
-		* Project Lead- Danny Godbout
-		* PM- Danny Godbout
-		* Data Scientist(s)- Danny Godbout
-	* Customers:
-		* Business Analyst- Scott Flint
-		* Business contact- Erich Coit, Doug Gunter
-		* End users of data product- TBD
+	* IT:
+		* Larry Burns, Project Architect/Lead
+		* Dan Schwesinger, Teradata DBA
+		* TBD, Application SMEs
+	* Business:
+		* TBD
 	* External Partners:
-		* Consulting- NA
-
-## Metrics
-* **What are the qualitative objectives? (e.g. reduce user churn)**
-	* Correct Classification- Decisions made by the algorithm match the decisions made by subject matter experts
-	* Yield- Percent of claims processed by the algorithm (low-confidence claims are passed on for manual review)
-	* Speed- Tool processes claims in a timely fashion.
-* **What are the quantifiable metrics, their baseline (current) values and target values  (e.g. reduce the fraction of users with 4-week inactivity from 60% to 40%)**
-	* Yield- Simple % of total claims flagged for payment or supplier recovery: (pay + supplier) / (pay + supplier + manual review)
-		* Baseline: TBD
-		* Target: TBD (Dependent on review of baseline data)
-	* Kappa Statistic- Score agreement between algorithm and subject matter experts. Kappa chosen over simple percent-agreement to compensate for biased classes (i.e. if 99.999% of claims were approved, an algorithm could simply approve all claims and agree 99.999% of the time. Kappa adjusts weighting for the smaller .001% remaining class to avoid "lazy" learners.)
-		* Baseline: 0.0 (Does any capability documentation, i.e. MSA, exist for the current process?)
-		* Target: > 0.6 is good, >0.8 stretch goal
-	* Time per prediction- Measure time to process a claim.
-		* Baseline: 1200 claims per week
-		* Target: > 1200 claims per week
-* **How will we measure the metric? (e.g. A/B test on a specified subset for a specified period; or comparison of performance after implementation to baseline)**
-	* Yield- Snapshot 2-4 weeks of claims, measure yield of algorithm output compared to manual process.
-	* Kappa- Measure metric on the same 2-4 week snapshot as yield.
-	* Time- Use code profiling tools to measure time to review a batch of claims.
-	* After implementation- Ongoing reports of yield, and auditing process to verify a sample of predictions.
+		* TBD
 
 ## Plan
 
