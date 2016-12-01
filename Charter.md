@@ -40,16 +40,14 @@
 	* What type and degree of stewardship by the business is needed to maintain the quality of customer data?
 	* What technologies and tools are needed to most effectively create and manage Customer master data?
 	* How can this master data be effectively leveraged in support of the above-mentioned business objectives?
-* **What Data Science solutions are we trying to build?**
-	* Two approaches are considered at the outset, approaching the approval decision from two perspectives.
-		* Approach 1: Assume no claims are approved until a sufficient amount of supporting evidence is produced. This is an **emulation of the current process**, and will consist of training a machine learner on historical claim adjudication data to build a virtual claim reviewer.
-		* Approach 2: Anomaly detection- assume all claims are valid and search for red flags to reject a claim. While this approach is a larger departure from the current process, it is self-healing and therefore **more robust in a long term implementation.** This approach is commonly seen in credit card processing.
-* **How is it going to be consumed by the customer?**
-	* Current:
-		* Generate a report of recommended actions for reviewed claims (approve, manual review, supplier recovery).
-		* In claims classified for manual review, flag values that caused uncertainty.
-	* New Warranty Tool:
-		* The project will attempt to leverage human-readable models, allowing rules to be extracted from the model to populate Pega's auto-pay rules engine.
+* **Statement of work:**
+	* Identification and modeling of customer-related data entities
+	* Identification of data sources
+	* Creation of MDM solution architecture and MDM repository
+	* Extraction and profiling of data from each source
+	* Cleansing, transformation, integration and loading of data into MDM repository
+	* Creation of associated end-user metadata
+	* Evaluation of MDM tools and technologies
 
 ## Personnel
 * Project Team:
