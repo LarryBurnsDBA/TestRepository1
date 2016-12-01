@@ -1,16 +1,28 @@
-# Project Charter- Warranty Auto Payment
+# Project Charter- Customer 360
 
 ## Business background
 * **Who are the stakeholders?**
-	* Dealers
-	* Customers (Confirm?)
-	* Division Warranty Groups
-	* Comptrollers (Confirm?)
+	* Business Analysts
+	* Business Strategists
+	* PACCAR Dealers
+	* IT Architects
+	* Data Governance Stewards
+	* Regulatory Managers
+	* Marketing Managers
+	* Finance Managers
+	* Leasing Managers
 * **What are the basic business problems we are trying to address?**
-	* Warranty payment is dependent on a manual approval process that consumes a large amount of resources and can fall behind stakeholder expectations for timeliness.
+	* Identify opportunities to create customer loyalty/affinity programs
+	* Create location-based driver (concierge) services
+	* Enable targeted marketing campaigns by purchase probability
+	* Support advanced credit risk analysis
+	* Ensure regulatory compliance through appropriate customer and dealer incentives
+	* Identify additional sales opportunities in the Aftermarket
+	* Provide better and more consistent customer service
+	* Develop a better understanding of the total lifetime value of each customer 
+	* Possible monetization of data relating to PACCAR's customer relationships
 * **What is this problem worth to the stakeholders?**
-	* Estimated labor savings: $10k / month / division (Based on 2015 investigation)
-	* Early detection of design issues: TBD
+	* TBD
 
 ## Scope
 * **Why is Data Science the right approach?**
