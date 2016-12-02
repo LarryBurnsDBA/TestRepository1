@@ -49,6 +49,29 @@
 	* Creation of associated end-user metadata
 	* Evaluation of MDM tools and technologies
 	* Evaluation of MDM governance strategies
+* **Critical success factors:**
+	* Commitment and support from Division and ITD management and SMEs
+	* Willingness to agree on common data meanings and values
+	* Willingness to share data across business Divisions
+	* Willingness to accept business process changes
+	* Sufficient tooling and resources to automate MDM processes
+* **Significant risks:**
+	* Inability to agree on common data definitions and values
+	* Inability to uniquely identify and de-dupe customer records
+	* Inability to bring customer data to a sufficient level of quality
+	* Lack of expertise/experience in MDM and data governance processes
+	* Unwillingness to share data across Divisions
+	* Unwillingness to accept business process changes
+* **Skill sets needed:**
+	* Business Analysis
+	* Data Modeling
+	* Data and Application Integration
+	* Data Quality Management
+	* Database Administration
+	* ETL Development
+	* Application/Web Services Development
+	* Metadata Management
+	* Data Governance
 
 ## Personnel
 * Project Team:
