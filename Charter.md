@@ -65,47 +65,20 @@
 
 | Milestone | Est. Completion | Description |
 | ---:| ---: | ---: | ---: |
-| Build data pipeline | Nov. 4 | 1. Gain access to warranty prod database <br/> 2. Wiretap original claims from mainframe into a separate database |
-| Accumulate data | Nov. 18 - Dec. 2 (est.) | Accumulate approximately 5000 copies of both original **and** processed claims |
-| Stakeholder charter review | Nov. 25 | Complete project charter document with stakeholders to confirm scope and targets |
-| Review baseline data | Dec. 2 | Basic data mining, calculation of summary statistics, transformation and tidying of data |
-| Approach 1: ML | Jan. 6 | Build machine learners for approach 1 |
-| Approach 2: Anomaly Detection | Jan. 6 | Build anomaly detection for approach 2 |
-| Review performance | Jan. 20 | Review performance against metrics with project stakeholders |
-| Go/ No-Go for Pilot | Jan. 20 | Identify need for additional iterations, and/or make decision on whether to proceed with a pilot |
+| Define MDM Architecture | TBD | Determine Customer MDM solution architecture | 
+| Design MDM Solution | TBD | Identification and modeling of customer-related entities |
+| Identify and Source MDM Data | TBD | Identification of customer MDM data sources | 
+| Ingest and Profile MDM Data | TBD | Extraction and profiling of data from each source | 
+| Load MDM Data | TBD | Cleansing, transformation, integration and loading of data into MDM repository | 
+| Create MDM Metadata | TBD | Create appropriate end-user metadata for MDM repository | 
+| Select MDM Tools | TBD | Evaluation and final selection of MDM tools and platforms | 
+| Recommend MDM Governance Approach | TBD | Publish recommendation for business MDM governance | 
+| Project Review | TBD | Review of project performance with stakeholders | 
 
-
-## Architecture
-### Data
-* **What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, on-prem Hadoop etc.)**
-	* Processed claims obtained from the Production Warranty database (SQL)
-	* Original claims will be extracted from DWC on mainframe daily, generating a flat file to be transmitted via FTP to a network folder. Flat files will be ingested into an on-prem Hadoop platform and stored in Hive for SQL access.
-* **What quantity of data do we expect? (e.g. Megabytes, Terabytes?)**
-	* 100s of MB to 1s of GBs.
-
-### Data processing in analytical environment
-* **Is the data tractable on a single machine, or will it require clustered resources?**
-   * Expectation is that data are manageable on a single PC. Snapshots of data sources will be stored as RData files for analysis.
-
-### What tools and data storage/analytics resources will be used in the solution
-* SQL Server Management Studio- Data capture from production warranty database.
-* Apache Kafka (or similar)- Ingestion of mainframe flat files into a project data warehouse.
-* Apache Hadoop, Hive- Project data warehouse, storing mainframe exports of original warranty claims.
-* R- Data processing and modeling.
-
-### How will the operationalized web service(s) be consumed in the business workflow of the customer?
-* **How will the customer use the model results to make decisions**
-	* The model will automate the decision process for a portion of claims, reducing labor hours for claim adjudication.
-	* The model will flag unusual values requiring additional information from a dealership.
-	* With the transition to the Pega warranty system, the model can produce rules to populate Pega's rule engine.
-* **Data movement pipeline in production**
-	* TBD
-* **Document any substantive changes to customer workflow**
-	* TBD
 
 ## Communication
 * Communication schedule
 	* Update provided to stakeholders upon milestone completion, or every 2 weeks.
 * Who are the contact persons on both sides?
-	* ITD: Danny Godbout
-	* Vehicle Divisions: Erich Coit, Doug Gunter, Jake Montero
+	* ITD: Larry Burns
+	* Business Divisions: TBD
